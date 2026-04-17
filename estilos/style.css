@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 /*
 Cores iniciais:
 ce: #121212
@@ -10,3 +14,43 @@ rn: #b21286
 cn: #027368
 ln: #ff8100
 */
+
+:root {
+    --cor01: #121212;
+    --cor02: #ff8100;
+    --cor03: #027368;
+    --cor04: #0041ff;
+    --cor05: #0009ff;
+    --cor06: #b21286;
+    --cor07: #421e42;
+    
+    --font01: "Poppins", sans-serif;
+    --font02: "Press Start 2P", system-ui;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--font01);
+}
+
+main {
+    background-color: var(--cor01);
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#criacao > h1 {
+    font-family: var(--font02);
+    font-weight: normal;
+    font-size: 1.4em;
+    text-align: center;
+    color: #b21286;
+}
