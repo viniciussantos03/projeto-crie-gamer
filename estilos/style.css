@@ -17,8 +17,8 @@ ln: #ff8100
 
 :root {
     --cor01: #121212;
-    --cor02: #ff8100;
-    --cor03: #027368;
+    --cor02: #027368;
+    --cor03: #025f56;
     --cor04: #0041ff;
     --cor05: #0009ff;
     --cor06: #b21286;
@@ -47,10 +47,109 @@ main {
     height: 100vh;
 }
 
+section#criacao {
+    padding-bottom: 20px;
+}
+
 section#criacao > h1 {
     font-family: var(--font02);
     font-weight: normal;
     font-size: 1.4em;
     text-align: center;
-    color: #b21286;
+    color: var(--cor06);
+    text-shadow: 2px 2px 5px var(--cor06);
+    padding: 30px 0px; 
+}
+
+section > div.conta > span {
+    padding: 10px;
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+section#criacao > div.conta > label {
+    display: none;
+}
+
+section#criacao > div.conta > input {
+    background-color: var(--cor07);
+    color: white;
+    height: 40px;
+    width: calc(100% - 66px);
+    border-radius: 10px;
+    border: 1px solid var(--cor04);
+    padding: 5px;
+    box-shadow: 0px 0px 10px var(--cor05);
+}
+
+section#marcacao > h2 {
+    color: var(--cor06);
+    text-shadow: 0px 0px 5px var(--cor06);
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.6em;
+    margin: 20px 0px;
+}
+
+section#marcacao > div.escolha > input[type="radio"] {
+    display: none;
+}
+
+section#marcacao > div.escolha > input[type="radio"] + label::before {
+    display: inline-block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    color: var(--cor02);
+    background-color: var(--cor02);
+    border: 1px solid var(--cor03);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+section#marcacao > div.escolha > input[type="radio"]:checked + label::before {
+    background-color: var(--cor04);
+    border: 1px solid var(--cor05);
+    padding: 1px;
+}
+
+section#marcacao > div.escolha > input[type="checkbox"] {
+    display: none;
+}
+
+section#marcacao > div.escolha > input[type="checkbox"] + label::before {
+    display: inline-block;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 3px;
+    background-color: var(--cor02);
+    border: 1px solid var(--cor03);
+    vertical-align: middle;
+    margin: 20px 5px 20px 20px;
+    cursor: pointer;
+}
+
+section#marcacao > div.escolha > input[type="checkbox"]:checked + label::before {
+    background: url('../imagens/checked.webp') no-repeat center center;
+    background-size: cover;
+    background-color: var(--cor04);
+    border: 1px solid var(--cor05);
+}
+
+div.iniciar > input[type="submit"] {
+    display: block;
+    font-size: 1em;
+    background-color: var(--cor06);
+    color: var(--cor05);
+    border: none;
+    margin: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 0px 0px 5px var(--cor06);
+    cursor: pointer;
 }
