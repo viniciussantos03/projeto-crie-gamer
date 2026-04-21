@@ -4,17 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/*
-Cores iniciais:
-ce: #121212
-acn: #0041ff
-rn: #421e42
-aen: #0009ff
-rn: #b21286
-cn: #027368
-ln: #ff8100
-*/
-
 :root {
     --cor01: #121212;
     --cor02: #027368;
@@ -75,7 +64,27 @@ section#criacao > div.conta > input {
     border-radius: 10px;
     border: 1px solid var(--cor04);
     padding: 5px;
-    box-shadow: 0px 0px 10px var(--cor05);
+    box-shadow: 0px 0px 8px var(--cor05);
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+section#criacao > div.conta > input::placeholder {
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+section#criacao > div.conta > input:focus-within {
+    background-color: #271227;
+    color: var(--cor06);
+    opacity: 1;
+}
+
+section#criacao > div.conta > input:focus-within::placeholder {
+    color: var(--cor06);
 }
 
 section#marcacao > h2 {
@@ -104,12 +113,12 @@ section#marcacao > div.escolha > input[type="radio"] + label::before {
     margin-right: 5px;
     vertical-align: middle;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 section#marcacao > div.escolha > input[type="radio"]:checked + label::before {
     background-color: var(--cor04);
     border: 1px solid var(--cor05);
-    padding: 1px;
 }
 
 section#marcacao > div.escolha > input[type="checkbox"] {
@@ -127,6 +136,7 @@ section#marcacao > div.escolha > input[type="checkbox"] + label::before {
     vertical-align: middle;
     margin: 20px 5px 20px 20px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 section#marcacao > div.escolha > input[type="checkbox"]:checked + label::before {
@@ -138,14 +148,24 @@ section#marcacao > div.escolha > input[type="checkbox"]:checked + label::before 
 
 div.iniciar > input[type="submit"] {
     display: block;
-    font-size: 1em;
+    font-size: 1.3em;
     background-color: var(--cor06);
-    color: var(--cor05);
+    color: #0006be;
     border: none;
     margin: auto;
     padding: 5px 10px;
     border-radius: 10px;
     margin-top: 25px;
+    margin-bottom: 25px;
     box-shadow: 0px 0px 5px var(--cor06);
+    text-shadow: 0px 0px 1px #0006be;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+div.iniciar > input[type="submit"]:hover {
+    color: #1c55ff;
+    background-color: #5a0943;
+    text-shadow :0px 0px 1px #1c55ff;
+    box-shadow: 0px 0px 5px #79135c;
 }
