@@ -34,6 +34,7 @@ body, html {
 
 section#criacao {
     padding-bottom: 20px;
+    padding: 0px 10px;
 }
 
 section#criacao > h1 {
@@ -56,6 +57,11 @@ section#criacao > div.conta > label {
     display: none;
 }
 
+input:focus {
+    outline: none;
+}
+
+
 section#criacao > div.conta > input {
     background-color: var(--cor07);
     color: white;
@@ -73,10 +79,6 @@ section#criacao > div.conta > input::placeholder {
     color: white;
 }
 
-input:focus {
-    outline: none;
-}
-
 section#criacao > div.conta > input:focus-within {
     background-color: #271227;
     color: var(--cor06);
@@ -85,6 +87,10 @@ section#criacao > div.conta > input:focus-within {
 
 section#criacao > div.conta > input:focus-within::placeholder {
     color: var(--cor06);
+}
+
+section#marcacao {
+    padding: 0px 10px;
 }
 
 section#marcacao > h2 {
@@ -117,8 +123,8 @@ section#marcacao > div.escolha > input[type="radio"] + label::before {
 }
 
 section#marcacao > div.escolha > input[type="radio"]:checked + label::before {
-    background-color: var(--cor04);
-    border: 1px solid var(--cor05);
+    background-color: #00ffe5;
+    border: 1px solid #00ffe5;
 }
 
 section#marcacao > div.escolha > input[type="checkbox"] {
@@ -142,23 +148,23 @@ section#marcacao > div.escolha > input[type="checkbox"] + label::before {
 section#marcacao > div.escolha > input[type="checkbox"]:checked + label::before {
     background: url('../imagens/checked.webp') no-repeat center center;
     background-size: cover;
-    background-color: var(--cor04);
-    border: 1px solid var(--cor05);
+    background-color: #00ffe5;
+    border: 1px solid #00ffe5;
 }
 
 div.iniciar > input[type="submit"] {
     display: block;
     font-size: 1.3em;
     background-color: var(--cor06);
-    color: #0006be;
+    color: #0108d4;
     border: none;
     margin: auto;
     padding: 5px 10px;
     border-radius: 10px;
     margin-top: 25px;
     margin-bottom: 25px;
-    box-shadow: 0px 0px 5px var(--cor06);
-    text-shadow: 0px 0px 1px #0006be;
+    box-shadow: 0px 0px 10px var(--cor06);
+    text-shadow: 0px 0px 1px #0108d4;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -167,5 +173,5 @@ div.iniciar > input[type="submit"]:hover {
     color: #1c55ff;
     background-color: #5a0943;
     text-shadow :0px 0px 1px #1c55ff;
-    box-shadow: 0px 0px 5px #79135c;
+    box-shadow: 0px 0px 10px #79135c;
 }
