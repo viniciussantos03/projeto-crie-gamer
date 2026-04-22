@@ -39,9 +39,9 @@ Grande telas: acima de 1201px
     }
 
     section#criacao {
+        overflow: hidden;
         float: right;
         width: 50%;
-        border-radius: 20px 0px 0px 20px;
         box-shadow: 0px 0px 10px var(--cor04);
     }
 
@@ -50,7 +50,7 @@ Grande telas: acima de 1201px
     }
 
     div#marcacao > h2 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     div.iniciar input[type="submit"] {
@@ -76,7 +76,6 @@ Grande telas: acima de 1201px
     section#criacao {
         float: right;
         width: 40%;
-        border-radius: 20px 0px 0px 20px;
         box-shadow: 0px 0px 10px var(--cor04);
     }
 
@@ -85,7 +84,7 @@ Grande telas: acima de 1201px
     }
 
     div#marcacao > h2 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     div.iniciar input[type="submit"] {
@@ -111,7 +110,6 @@ Grande telas: acima de 1201px
     section#criacao {
         float: right;
         width: 30%;
-        border-radius: 20px 0px 0px 20px;
         box-shadow: 0px 0px 10px var(--cor04);
     }
 
@@ -120,7 +118,7 @@ Grande telas: acima de 1201px
     }
 
     div#marcacao > h2 {
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
 
     div.iniciar input[type="submit"] {
