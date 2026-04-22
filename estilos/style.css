@@ -13,7 +13,7 @@
     --cor06: #b21286;
     --cor07: #421e42;
     
-    --font01: "Oxanium", sans-serif;
+    --font01: "Rajdhani", sans-serif;
     --font02: "Press Start 2P", system-ui;
 }
 
@@ -32,9 +32,17 @@ body, html {
     font-size: 0.8em;
 }
 
+section {
+    background-color: var(--cor01);
+    height: 100vh;
+    width: 100vw;
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
 section#criacao {
     padding-bottom: 20px;
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 
 section#criacao > h1 {
@@ -47,14 +55,15 @@ section#criacao > h1 {
     padding: 30px 0px; 
 }
 
-section > div.conta > span {
+div.conta > span {
     padding: 10px;
     font-size: 40px;
     vertical-align: middle;
 }
 
-section#criacao > div.conta > label {
-    display: none;
+div.conta > label {
+    position: absolute;
+    left: -999px;
 }
 
 input:focus {
@@ -62,7 +71,7 @@ input:focus {
 }
 
 
-section#criacao > div.conta > input {
+div.conta > input {
     background-color: var(--cor07);
     color: white;
     height: 40px;
@@ -75,38 +84,38 @@ section#criacao > div.conta > input {
     transition: 0.2s;
 }
 
-section#criacao > div.conta > input::placeholder {
+div.conta > input::placeholder {
     color: white;
 }
 
-section#criacao > div.conta > input:focus-within {
+div.conta > input:focus {
     background-color: #271227;
     color: var(--cor06);
     opacity: 1;
 }
 
-section#criacao > div.conta > input:focus-within::placeholder {
+div.conta > input:focus::placeholder {
     color: var(--cor06);
 }
 
-section#marcacao {
+div#marcacao {
     padding: 0px 10px;
 }
 
-section#marcacao > h2 {
+div#marcacao > h2 {
     color: var(--cor06);
     text-shadow: 0px 0px 5px var(--cor06);
     font-weight: normal;
     text-align: center;
     font-size: 2.2em;
-    margin: 30px 0px;
+    padding: 30px 0px;
 }
 
-section#marcacao > div.escolha > input[type="radio"] {
+div.escolha > input[type="radio"] {
     display: none;
 }
 
-section#marcacao > div.escolha > input[type="radio"] + label::before {
+div.escolha > input[type="radio"] + label::before {
     display: inline-block;
     content: "";
     width: 14px;
@@ -122,16 +131,16 @@ section#marcacao > div.escolha > input[type="radio"] + label::before {
     transition: 0.2s;
 }
 
-section#marcacao > div.escolha > input[type="radio"]:checked + label::before {
+div.escolha > input[type="radio"]:checked + label::before {
     background-color: #00ffe5;
     border: 1px solid #00ffe5;
 }
 
-section#marcacao > div.escolha > input[type="checkbox"] {
+div.escolha > input[type="checkbox"] {
     display: none;
 }
 
-section#marcacao > div.escolha > input[type="checkbox"] + label::before {
+div.escolha > input[type="checkbox"] + label::before {
     display: inline-block;
     content: "";
     height: 16px;
@@ -145,7 +154,7 @@ section#marcacao > div.escolha > input[type="checkbox"] + label::before {
     transition: 0.3s;
 }
 
-section#marcacao > div.escolha > input[type="checkbox"]:checked + label::before {
+div.escolha > input[type="checkbox"]:checked + label::before {
     background: url('../imagens/checked.webp') no-repeat center center;
     background-size: cover;
     background-color: #00ffe5;
@@ -156,22 +165,19 @@ div.iniciar > input[type="submit"] {
     display: block;
     font-size: 1.3em;
     background-color: #5a0943;
-    color: #1c55ff;
+    color: white;
     border: none;
     margin: auto;
     padding: 8px 15px;
     border-radius: 10px;
     margin-top: 25px;
-    margin-bottom: 25px;
-    box-shadow: 0px 0px 10px #5a0943;
-    text-shadow: 0px 0px 1px #1c55ff;
+    box-shadow: 0px 0px 5px #5a0943;
     cursor: pointer;
     transition: 0.3s;
 }
 
 div.iniciar > input[type="submit"]:hover {
-    color: #0036d6;
+    color: #271227;
     background-color: var(--cor06);
-    text-shadow :0px 0px 1px #0036d6;
-    box-shadow: 0px 0px 10px var(--cor06);
+    box-shadow: 0px 0px 5px var(--cor06);
 }

@@ -7,83 +7,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="shortcut icon" href="icone/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
-        <form action="montagem.php" method="post" autocomplete="on">
-            <section id="criacao">
-                    <h1>Crie Seu Personagem</h1>
-                    <div class="conta">
-                        <span class="material-symbols-outlined">person</span>
-                        <input type="text" name="user" id="iuser" required placeholder="nome do personagem" minlength="3" maxlength="20" autocomplete="off">
-                        <label for="iuser">User</label>
+        <div class="imagem">
+
+        </div>
+        <section id="criacao">
+            <h1>Crie Seu Personagem</h1>
+                <form action="montagem.php" method="post" autocomplete="on">
+                    <div class="criacao">
+                        <div class="conta">
+                            <span class="material-symbols-outlined">person</span>
+                            <input type="text" name="user" id="iuser" required placeholder="nome do personagem" minlength="3" maxlength="20" autocomplete="off">
+                            <label for="iuser">User</label>
+                        </div>
+                        <div class="conta">
+                            <span class="material-symbols-outlined">mail</span>
+                            <input type="email" name="email" id="iemail" required placeholder="seu e-mail" maxlength="30" autocomplete="email">
+                            <label for="iemail">E-mail</label>
+                        </div>
+                        <div class="conta">
+                            <span class="material-symbols-outlined">key</span>
+                            <input type="password" name="senha" id="isenha" required placeholder="codigo de acesso" minlength="8" maxlength="30" autocomplete="current-password">
+                            <label for="isenha">Senha</label>
+                        </div>
                     </div>
-                    <div class="conta">
-                        <span class="material-symbols-outlined">mail</span>
-                        <input type="email" name="email" id="iemail" required placeholder="seu e-mail" maxlength="30" autocomplete="email">
-                        <label for="iemail">E-mail</label>
+            
+                <div id="marcacao">
+                    <h2>Plataforma que você utiliza</h2>
+                        <div class="escolha">
+                            <input type="radio" name="plataforma" id="pc" value="pc" required>
+                            <label for="pc">PC</label>
+                            <input type="radio" name="plataforma" id="playstation" value="playstation">
+                            <label for="playstation">PlayStation</label>
+                            <input type="radio" name="plataforma" id="xbox" value="xbox">
+                            <label for="xbox">Xbox</label>
+                            <input type="radio" name="plataforma" id="mobile" value="mobile">
+                            <label for="mobile">Mobile</label>
+                            <input type="radio" name="plataforma" id="outro" value="outro">
+                            <label for="outro">Outro</label>
+                        </div>
+                    <h2>Nível de Habilidade</h2>
+                        <div class="escolha">
+                            <input type="radio" name="capacidade" id="ruim" value="ruim" required>
+                            <label for="ruim">Ruim</label>
+                            <input type="radio" name="capacidade" id="medio" value="medio">
+                            <label for="medio">Médio</label>
+                            <input type="radio" name="capacidade" id="bom" value="bom">
+                            <label for="bom">Bom</label>
+                            <input type="radio" name="capacidade" id="profissional" value="profissional">
+                            <label for="profissional">Profissional</label>
+                        </div>
+                    <h2>Estilos de jogos favoritos</h2>
+                        <div class="escolha">
+                            <input type="checkbox" name="estilo" id="rpg" value="rpg">
+                            <label for="rpg">RPG</label>
+                            <input type="checkbox" name="estilo" id="aventura" value="aventura">
+                            <label for="aventura">Aventura</label>
+                            <input type="checkbox" name="estilo" id="populares" value="populares">
+                            <label for="populares">Populares</label> <br>
+                            <input type="checkbox" name="estilo" id="acao" value="acao">
+                            <label for="acao">Ação</label>
+                            <input type="checkbox" name="estilo" id="esporte" value="esporte">
+                            <label for="esporte">Esporte</label>
+                            <input type="checkbox" name="estilo" id="eletronicos" value="eletronicos">
+                            <label for="eletronicos">Eletrônicos</label> <br>
+                            <input type="checkbox" name="estilo" id="estrategia" value="estrategia">
+                            <label for="estrategia">Estratégia</label>
+                            <input type="checkbox" name="estilo" id="tabuleiro" value="tabuleiro">
+                            <label for="tabuleiro">Tabuleiro</label>
+                            <input type="checkbox" name="estilo" id="outros" value="outros">
+                            <label for="outros">Outros</label> <br>
+                            <input type="checkbox" name="estilo" id="fps" value="fps">
+                            <label for="fps">FPS</label>
+                            <input type="checkbox" name="estilo" id="cartas" value="cartas">
+                            <label for="cartas">Cartas</label>
                     </div>
-                    <div class="conta">
-                        <span class="material-symbols-outlined">key</span>
-                        <input type="password" name="senha" id="isenha" required placeholder="codigo de acesso" minlength="8" maxlength="30" autocomplete="current-password">
-                        <label for="isenha">Senha</label>
-                    </div>
-            </section>
-            <section id="marcacao">
-                <h2>Plataforma que você utiliza</h2>
-                    <div class="escolha">
-                        <input type="radio" name="plataforma" id="pc" value="pc" required>
-                        <label for="pc">PC</label>
-                        <input type="radio" name="plataforma" id="playstation" value="playstation">
-                        <label for="playstation">PlayStation</label>
-                        <input type="radio" name="plataforma" id="xbox" value="xbox">
-                        <label for="xbox">Xbox</label>
-                        <input type="radio" name="plataforma" id="mobile" value="mobile">
-                        <label for="mobile">Mobile</label>
-                        <input type="radio" name="plataforma" id="outro" value="outro">
-                        <label for="outro">Outro</label>
-                    </div>
-                <h2>Nível de Habilidade</h2>
-                    <div class="escolha">
-                        <input type="radio" name="capacidade" id="ruim" value="ruim" required>
-                        <label for="ruim">Ruim</label>
-                        <input type="radio" name="capacidade" id="medio" value="medio">
-                        <label for="medio">Médio</label>
-                        <input type="radio" name="capacidade" id="bom" value="bom">
-                        <label for="bom">Bom</label>
-                        <input type="radio" name="capacidade" id="profissional" value="profissional">
-                        <label for="profissional">Profissional</label>
-                    </div>
-                <h2>Estilos de jogos favoritos</h2>
-                    <div class="escolha">
-                        <input type="checkbox" name="estilo" id="rpg" value="rpg">
-                        <label for="rpg">RPG</label> 
-                        <input type="checkbox" name="estilo" id="aventura" value="aventura">
-                        <label for="aventura">Aventura</label>
-                        <input type="checkbox" name="estilo" id="populares" value="populares">
-                        <label for="populares">Populares</label> <br>
-                        <input type="checkbox" name="estilo" id="acao" value="acao">
-                        <label for="acao">Ação</label>
-                        <input type="checkbox" name="estilo" id="esporte" value="esporte">
-                        <label for="esporte">Esporte</label>
-                        <input type="checkbox" name="estilo" id="eletronicos" value="eletronicos">
-                        <label for="eletronicos">Eletrônicos</label> <br>
-                        <input type="checkbox" name="estilo" id="estrategia" value="estrategia">
-                        <label for="estrategia">Estratégia</label>
-                        <input type="checkbox" name="estilo" id="tabuleiro" value="tabuleiro">
-                        <label for="tabuleiro">Tabuleiro</label> 
-                        <input type="checkbox" name="estilo" id="outros" value="outros">
-                        <label for="outros">Outros</label> <br>
-                        <input type="checkbox" name="estilo" id="fps" value="fps">
-                        <label for="fps">FPS</label>
-                        <input type="checkbox" name="estilo" id="cartas" value="cartas">
-                        <label for="cartas">Cartas</label>
-                    </div>
+                </div>
                     <div class="iniciar">
                         <input type="submit" value="Iniciar Jornada">
                     </div>
-            </section>
-        </form>
+                </form>
+        </section>
     </main>
 </body>
 </html>
