@@ -26,7 +26,6 @@ Grande telas: acima de 1201px
 
     body, html {
         font-size: 0.9em;
-        background-color: var(--cor04);
     }
 
     div.imagem {
@@ -61,7 +60,6 @@ Grande telas: acima de 1201px
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     body, html {
         font-size: 0.9em;
-        background-color: var(--cor04);
     }
 
     div.imagem {
@@ -95,7 +93,6 @@ Grande telas: acima de 1201px
 @media screen and (min-width: 1201px) {
     body, html {
         font-size: 0.9em;
-        background-color: var(--cor04);
     }
 
     div.imagem {
